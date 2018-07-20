@@ -17,10 +17,9 @@
 def initialize(context):
 
     from Products.CMFCore import utils
-
-    import UniqueIdAnnotationTool
-    import UniqueIdGeneratorTool
-    import UniqueIdHandlerTool
+    from Products.CMFUid import UniqueIdAnnotationTool
+    from Products.CMFUid import UniqueIdGeneratorTool
+    from Products.CMFUid import UniqueIdHandlerTool
 
     tools = (
         UniqueIdAnnotationTool.UniqueIdAnnotationTool,
